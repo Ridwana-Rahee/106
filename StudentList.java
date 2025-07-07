@@ -1,4 +1,4 @@
-// File Name: StudentList.java
+
 
 import java.io.*;
 import java.text.*;
@@ -59,7 +59,7 @@ public class StudentList {
             System.out.println("Loading data ...");
             try (BufferedReader fileReader = new BufferedReader(new InputStreamReader(new FileInputStream("students.txt")))) {
                 String fileContent = fileReader.readLine();
-                String[] words = fileContent.trim().split("\\s+");  // split by spaces or tabs
+                String[] words = fileContent.trim().split("\\s+");  
                 System.out.println(words.length + " word(s) found");
                 System.out.println("Data Loaded.");
             } catch (Exception e) {
